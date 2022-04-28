@@ -1,0 +1,23 @@
+* {margin: 0; padding:  0; box-sizing: border-box;}
+
+body {display: flex; justify-content: space-around;}
+
+div#board {
+	overflow: hidden;
+	margin: 20px auto;
+}
+
+/*Grabs all divs that have an id that starts with "row-" inside of a div. */
+div[id^="row-"] div {
+	border: 2px solid darkblue;
+	height: 200px;
+	width: 200px;
+	float: left;
+}
+
+div[id^="row-"] {clear: both;} 
+
+div#row-1 div {border-top: none;}
+div#row-3 div {border-bottom: none;}
+div[id^="row-"] div:first-child {border-left: none;}
+div[id^="row-"] div:last-child {border-right: none;}

@@ -1,6 +1,6 @@
 * {margin: 0; padding:  0; box-sizing: border-box;}
 
-body {display: flex; justify-content: space-around;}
+body {display: flex; justify-content: space-around; background-color: darkolivegreen;}
 
 div#board {
 	overflow: hidden;
@@ -13,6 +13,8 @@ div[id^="row-"] div {
 	height: 200px;
 	width: 200px;
 	float: left;
+	text-align: center;
+	font-size: 175px;
 }
 
 div[id^="row-"] {clear: both;} 
